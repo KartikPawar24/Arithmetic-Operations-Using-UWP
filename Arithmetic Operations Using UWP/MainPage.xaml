@@ -9,6 +9,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <TextBlock x:Name="tblname" HorizontalAlignment="Left" Height="66" Margin="575,62,0,0" Text="Arithmetic Operations" TextWrapping="Wrap" VerticalAlignment="Top" Width="444" FontSize="36"/>
+        <TextBlock x:Name="tblnum1" HorizontalAlignment="Left" Height="60" Margin="482,156,0,0" Text="Enter num1:" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" FontSize="36"/>
+        <TextBlock x:Name="tblnum2" HorizontalAlignment="Left" Height="56" Margin="482,248,0,0" Text="Enter num2:" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" FontSize="36"/>
+        <TextBlock x:Name="tblres" HorizontalAlignment="Left" Height="56" Margin="482,346,0,0" Text="Result is:" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" FontSize="36"/>
+        <TextBox x:Name="txtnum1" HorizontalAlignment="Left" Height="48" Margin="776,156,0,0" Text="" VerticalAlignment="Top" Width="238" FontSize="24"/>
+        <TextBox x:Name="txtnum2" HorizontalAlignment="Left" Height="48" Margin="776,248,0,0" Text="" VerticalAlignment="Top" Width="238" FontSize="24"/>
+        <Button x:Name="btndiv" Content="Division" HorizontalAlignment="Left" Height="66" Margin="502,651,0,0" VerticalAlignment="Top" Width="199" FontSize="24" Click="btndiv_Click"/>
+        <Button x:Name="btnadd" Content="Addition" HorizontalAlignment="Left" Height="66" Margin="502,500,0,0" VerticalAlignment="Top" Width="199" FontSize="24" Click="btnadd_Click"/>
+        <Button x:Name="btnsub_" Content="Substraction" HorizontalAlignment="Left" Height="66" Margin="776,500,0,0" VerticalAlignment="Top" Width="199" FontSize="24" Click="btnsub__Click"/>
+        <Button x:Name="btnrem" Content="Remainder" HorizontalAlignment="Left" Height="66" Margin="776,651,0,0" VerticalAlignment="Top" Width="199" FontSize="24" Click="btnrem_Click"/>
+        <Button x:Name="btnmul" Content="Multiplication" HorizontalAlignment="Left" Height="66" Margin="1044,500,0,0" VerticalAlignment="Top" Width="199
+                " FontSize="24" Click="btnmul_Click"/>
+        <Button x:Name="btnclr" Content="Clear" HorizontalAlignment="Left" Height="66" Margin="1044,651,0,0" VerticalAlignment="Top" Width="199" FontSize="24" Click="btnclr_Click"/>
+        <TextBlock x:Name="tblresult" HorizontalAlignment="Left" Height="48" Margin="776,346,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" FontSize="24"/>
     </Grid>
 </Page>

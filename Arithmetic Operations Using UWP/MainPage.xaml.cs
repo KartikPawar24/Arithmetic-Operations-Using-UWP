@@ -26,5 +26,47 @@ namespace Arithmetic_Operations_Using_UWP
         {
             this.InitializeComponent();
         }
+
+        private void btnadd_Click(object sender, RoutedEventArgs e)
+        {
+            float a = Convert.ToInt32(txtnum1.Text);
+            float b = Convert.ToInt32(txtnum2.Text);
+            tblresult.Text = (a + b).ToString();
+        }
+
+        private void btnsub__Click(object sender, RoutedEventArgs e)
+        {
+            float a = Convert.ToInt32(txtnum1.Text);
+            float b = Convert.ToInt32(txtnum2.Text);
+            tblresult.Text = (a - b).ToString();
+        }
+
+        private void btnmul_Click(object sender, RoutedEventArgs e)
+        {
+            float a = Convert.ToInt32(txtnum1.Text);
+            float b = Convert.ToInt32(txtnum2.Text);
+            tblresult.Text = (a * b).ToString();
+        }
+
+        private void btndiv_Click(object sender, RoutedEventArgs e)
+        {
+            float a = Convert.ToInt32(txtnum1.Text);
+            float b = Convert.ToInt32(txtnum2.Text);
+            tblresult.Text = (a / b).ToString();
+        }
+
+        private void btnrem_Click(object sender, RoutedEventArgs e)
+        {
+            int a = Convert.ToInt32(txtnum1.Text);
+            int b = Convert.ToInt32(txtnum2.Text);
+            tblresult.Text = (a % b).ToString();
+        }
+
+        private void btnclr_Click(object sender, RoutedEventArgs e)
+        {
+            txtnum1.Text = String.Empty;
+            txtnum2.Text = String.Empty;
+            tblresult.Text = String.Empty;
+        }
     }
 }
